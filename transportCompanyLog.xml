@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-02T12:38:29.058752586Z</date>
+  <millis>1619959109058</millis>
+  <nanos>752586</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Logger was successfully redirected to XMLFormatter</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.071883515Z</date>
+  <millis>1619959109071</millis>
+  <nanos>883515</nanos>
+  <sequence>1</sequence>
+  <logger>utilities.TransportCompanyConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.TransportCompanyConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Transport company configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.079760550Z</date>
+  <millis>1619959109079</millis>
+  <nanos>760550</nanos>
+  <sequence>2</sequence>
+  <logger>utilities.GoodsConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.GoodsConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>computer's configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.080921584Z</date>
+  <millis>1619959109080</millis>
+  <nanos>921584</nanos>
+  <sequence>3</sequence>
+  <logger>utilities.GoodsConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.GoodsConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>drink's configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.081882218Z</date>
+  <millis>1619959109081</millis>
+  <nanos>882218</nanos>
+  <sequence>4</sequence>
+  <logger>utilities.GoodsConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.GoodsConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>tire's configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.082751314Z</date>
+  <millis>1619959109082</millis>
+  <nanos>751314</nanos>
+  <sequence>5</sequence>
+  <logger>utilities.GoodsConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.GoodsConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>toy's configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.084958655Z</date>
+  <millis>1619959109084</millis>
+  <nanos>958655</nanos>
+  <sequence>6</sequence>
+  <logger>utilities.TrainsConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.TrainsConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>avangard's configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.086459005Z</date>
+  <millis>1619959109086</millis>
+  <nanos>459005</nanos>
+  <sequence>7</sequence>
+  <logger>utilities.TrainsConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.TrainsConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>redStar's configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.087194926Z</date>
+  <millis>1619959109087</millis>
+  <nanos>194926</nanos>
+  <sequence>8</sequence>
+  <logger>utilities.TrainsConfigurator</logger>
+  <level>INFO</level>
+  <class>utilities.TrainsConfigurator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>torpedo's configs were successfully read</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.087395248Z</date>
+  <millis>1619959109087</millis>
+  <nanos>395248</nanos>
+  <sequence>9</sequence>
+  <logger>ConfiguratorManager</logger>
+  <level>INFO</level>
+  <class>ConfiguratorManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>ConfiguratorManager constructor finished. All configs were successfully created</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.087563849Z</date>
+  <millis>1619959109087</millis>
+  <nanos>563849</nanos>
+  <sequence>10</sequence>
+  <logger>TransportCompanyLauncher</logger>
+  <level>INFO</level>
+  <class>TransportCompanyLauncher</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Configurator manager was successfully created</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.088167370Z</date>
+  <millis>1619959109088</millis>
+  <nanos>167370</nanos>
+  <sequence>11</sequence>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
+  <class>DepartureStation</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Departure station depot was successfully created</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.088812089Z</date>
+  <millis>1619959109088</millis>
+  <nanos>812089</nanos>
+  <sequence>12</sequence>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
+  <class>DepartureStation</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Goods storages in departure station were successfully initialized</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.089172740Z</date>
+  <millis>1619959109089</millis>
+  <nanos>172740</nanos>
+  <sequence>13</sequence>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
+  <class>DepartureStation</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Stations railway tracks in departure station were successfully initialized</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.089815624Z</date>
+  <millis>1619959109089</millis>
+  <nanos>815624</nanos>
+  <sequence>14</sequence>
+  <logger>ArrivalStation</logger>
+  <level>INFO</level>
+  <class>ArrivalStation</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Arrival station depot was successfully created</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.090040748Z</date>
+  <millis>1619959109090</millis>
+  <nanos>40748</nanos>
+  <sequence>15</sequence>
+  <logger>ArrivalStation</logger>
+  <level>INFO</level>
+  <class>ArrivalStation</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Goods storages in arrival station were successfully initialized</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.090191736Z</date>
+  <millis>1619959109090</millis>
+  <nanos>191736</nanos>
+  <sequence>16</sequence>
+  <logger>ArrivalStation</logger>
+  <level>INFO</level>
+  <class>ArrivalStation</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Stations railway tracks in arrival station were successfully initialized</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.090367010Z</date>
+  <millis>1619959109090</millis>
+  <nanos>367010</nanos>
+  <sequence>17</sequence>
+  <logger>TransportCompanyLauncher</logger>
+  <level>INFO</level>
+  <class>TransportCompanyLauncher</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>All stations were successfully created</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.090649022Z</date>
+  <millis>1619959109090</millis>
+  <nanos>649022</nanos>
+  <sequence>18</sequence>
+  <logger>TransportCompanyLauncher</logger>
+  <level>INFO</level>
+  <class>TransportCompanyLauncher</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Directed railway tracks manager was successfully created</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.091510130Z</date>
+  <millis>1619959109091</millis>
+  <nanos>510130</nanos>
+  <sequence>19</sequence>
+  <logger>TransportCompanyLauncher</logger>
+  <level>INFO</level>
+  <class>TransportCompanyLauncher</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Factories and consumers were successfully initialized</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.105844342Z</date>
+  <millis>1619959109105</millis>
+  <nanos>844342</nanos>
+  <sequence>21</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>Consumer #4 wants to get computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.106060430Z</date>
+  <millis>1619959109106</millis>
+  <nanos>60430</nanos>
+  <sequence>25</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>Consumer #2 wants to get computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.105960126Z</date>
+  <millis>1619959109105</millis>
+  <nanos>960126</nanos>
+  <sequence>24</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>Consumer #1 wants to get drink</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.105948543Z</date>
+  <millis>1619959109105</millis>
+  <nanos>948543</nanos>
+  <sequence>23</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>Consumer #8 wants to get computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.105844445Z</date>
+  <millis>1619959109105</millis>
+  <nanos>844445</nanos>
+  <sequence>22</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>Consumer #0 wants to get toy</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.105844539Z</date>
+  <millis>1619959109105</millis>
+  <nanos>844539</nanos>
+  <sequence>20</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>Consumer #5 wants to get toy</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107535907Z</date>
+  <millis>1619959109107</millis>
+  <nanos>535907</nanos>
+  <sequence>33</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Thread-6: factory #6 started to produce toy</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107347499Z</date>
+  <millis>1619959109107</millis>
+  <nanos>347499</nanos>
+  <sequence>32</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>Thread-5: factory #5 started to produce tire</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107339926Z</date>
+  <millis>1619959109107</millis>
+  <nanos>339926</nanos>
+  <sequence>31</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>Thread-0: factory #0 started to produce computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107263704Z</date>
+  <millis>1619959109107</millis>
+  <nanos>263704</nanos>
+  <sequence>29</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Thread-2: factory #2 started to produce computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107266596Z</date>
+  <millis>1619959109107</millis>
+  <nanos>266596</nanos>
+  <sequence>30</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>Thread-3: factory #3 started to produce drink</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107122676Z</date>
+  <millis>1619959109107</millis>
+  <nanos>122676</nanos>
+  <sequence>28</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Thread-4: factory #4 started to produce tire</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107122560Z</date>
+  <millis>1619959109107</millis>
+  <nanos>122560</nanos>
+  <sequence>27</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Thread-1: factory #1 started to produce computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107056382Z</date>
+  <millis>1619959109107</millis>
+  <nanos>56382</nanos>
+  <sequence>26</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>Consumer #6 wants to get toy</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.108268329Z</date>
+  <millis>1619959109108</millis>
+  <nanos>268329</nanos>
+  <sequence>36</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>Consumer #7 wants to get computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107844886Z</date>
+  <millis>1619959109107</millis>
+  <nanos>844886</nanos>
+  <sequence>35</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>Consumer #9 wants to get toy</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:29.107664188Z</date>
+  <millis>1619959109107</millis>
+  <nanos>664188</nanos>
+  <sequence>34</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>Consumer #3 wants to get drink</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:32.108928423Z</date>
+  <millis>1619959112108</millis>
+  <nanos>928423</nanos>
+  <sequence>37</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Thread-6: factory #6 finished the producing of toy</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.108508844Z</date>
+  <millis>1619959114108</millis>
+  <nanos>508844</nanos>
+  <sequence>38</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>Thread-0: factory #0 finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.109050173Z</date>
+  <millis>1619959114109</millis>
+  <nanos>50173</nanos>
+  <sequence>41</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Thread-1: factory #1 finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.108830562Z</date>
+  <millis>1619959114108</millis>
+  <nanos>830562</nanos>
+  <sequence>40</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>Thread-3: factory #3 finished the producing of drink</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.108615783Z</date>
+  <millis>1619959114108</millis>
+  <nanos>615783</nanos>
+  <sequence>39</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Thread-2: factory #2 finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.118910137Z</date>
+  <millis>1619959114118</millis>
+  <nanos>910137</nanos>
+  <sequence>42</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>GoodsStorage</class>
+  <method>loadGood</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the storage #3. Current storage's fullness = 1</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.122212067Z</date>
+  <millis>1619959114122</millis>
+  <nanos>212067</nanos>
+  <sequence>43</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the associate storage from factory #6</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.122387587Z</date>
+  <millis>1619959114122</millis>
+  <nanos>387587</nanos>
+  <sequence>44</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Thread-6: factory #6 started to produce toy</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.267888107Z</date>
+  <millis>1619959114267</millis>
+  <nanos>888107</nanos>
+  <sequence>45</sequence>
+  <logger>handlers.QuitButtonClickHandler</logger>
+  <level>WARNING</level>
+  <class>handlers.QuitButtonClickHandler</class>
+  <method>handle</method>
+  <thread>1</thread>
+  <message>Quit symbol was handled</message>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284602Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284602</nanos>
+  <sequence>46</sequence>
+  <logger>GoodsFactory</logger>
+  <level>WARNING</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Factory #2 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException: sleep interrupted</message>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>sleep</method>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>loadGood</method>
+      <line>30</line>
+    </frame>
+    <frame>
+      <class>GoodsFactory</class>
+      <method>run</method>
+      <line>37</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271726981Z</date>
+  <millis>1619959114271</millis>
+  <nanos>726981</nanos>
+  <sequence>62</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>Consumer #1 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271630997Z</date>
+  <millis>1619959114271</millis>
+  <nanos>630997</nanos>
+  <sequence>61</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>Consumer #0 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271630580Z</date>
+  <millis>1619959114271</millis>
+  <nanos>630580</nanos>
+  <sequence>60</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>Consumer #3 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271629035Z</date>
+  <millis>1619959114271</millis>
+  <nanos>629035</nanos>
+  <sequence>58</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>Consumer #7 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271629026Z</date>
+  <millis>1619959114271</millis>
+  <nanos>629026</nanos>
+  <sequence>59</sequence>
+  <logger>GoodsFactory</logger>
+  <level>WARNING</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>Factory #5 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException: sleep interrupted</message>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>sleep</method>
+    </frame>
+    <frame>
+      <class>GoodsFactory</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271573378Z</date>
+  <millis>1619959114271</millis>
+  <nanos>573378</nanos>
+  <sequence>57</sequence>
+  <logger>GoodsFactory</logger>
+  <level>WARNING</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>Factory #0 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException: sleep interrupted</message>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>sleep</method>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>loadGood</method>
+      <line>30</line>
+    </frame>
+    <frame>
+      <class>GoodsFactory</class>
+      <method>run</method>
+      <line>37</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271505124Z</date>
+  <millis>1619959114271</millis>
+  <nanos>505124</nanos>
+  <sequence>55</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>Consumer #6 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271505960Z</date>
+  <millis>1619959114271</millis>
+  <nanos>505960</nanos>
+  <sequence>56</sequence>
+  <logger>GoodsFactory</logger>
+  <level>WARNING</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Factory #4 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException: sleep interrupted</message>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>sleep</method>
+    </frame>
+    <frame>
+      <class>GoodsFactory</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284572Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284572</nanos>
+  <sequence>52</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>Consumer #9 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271351267Z</date>
+  <millis>1619959114271</millis>
+  <nanos>351267</nanos>
+  <sequence>54</sequence>
+  <logger>GoodsFactory</logger>
+  <level>WARNING</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Factory #1 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException: sleep interrupted</message>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>sleep</method>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>loadGood</method>
+      <line>30</line>
+    </frame>
+    <frame>
+      <class>GoodsFactory</class>
+      <method>run</method>
+      <line>37</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284641Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284641</nanos>
+  <sequence>48</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>Consumer #5 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284468Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284468</nanos>
+  <sequence>49</sequence>
+  <logger>GoodsFactory</logger>
+  <level>WARNING</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Factory #6 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException: sleep interrupted</message>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>sleep</method>
+    </frame>
+    <frame>
+      <class>GoodsFactory</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284485Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284485</nanos>
+  <sequence>53</sequence>
+  <logger>GoodsFactory</logger>
+  <level>WARNING</level>
+  <class>GoodsFactory</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>Factory #3 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException: sleep interrupted</message>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>sleep</method>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>loadGood</method>
+      <line>30</line>
+    </frame>
+    <frame>
+      <class>GoodsFactory</class>
+      <method>run</method>
+      <line>37</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284530Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284530</nanos>
+  <sequence>50</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>Consumer #2 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284547Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284547</nanos>
+  <sequence>51</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>Consumer #8 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2021-05-02T12:38:34.271284570Z</date>
+  <millis>1619959114271</millis>
+  <nanos>284570</nanos>
+  <sequence>47</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>WARNING</level>
+  <class>GoodsConsumer</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>Consumer #4 stopped by interrupt</message>
+  <exception>
+    <message>java.lang.InterruptedException</message>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+    </frame>
+    <frame>
+      <class>java.lang.Object</class>
+      <method>wait</method>
+      <line>320</line>
+    </frame>
+    <frame>
+      <class>GoodsStorage</class>
+      <method>unloadGood</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>GoodsConsumer</class>
+      <method>run</method>
+      <line>32</line>
+    </frame>
+  </exception>
+</record>
+</log>
