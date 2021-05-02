@@ -1,5 +1,4 @@
 import utilities.GoodsConfigurator;
-import utilities.TransportCompanyConfigurator;
 
 import java.io.IOException;
 import java.util.ArrayList;

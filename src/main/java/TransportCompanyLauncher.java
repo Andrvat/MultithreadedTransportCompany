@@ -1,6 +1,4 @@
-
 import utilities.GoodsConfigurator;
-import utilities.TransportCompanyConfigurator;
 
 import javax.naming.InvalidNameException;
 import java.io.IOException;
@@ -79,6 +77,15 @@ public final class TransportCompanyLauncher {
         for (GoodsFactory factory : goodsFactories) {
             factory.start();
         }
+
+        /**
+         * TODO: запустить в отдельном потоке RailwayMainManager, который раскидает дальнейшние задачи
+         * - заставить депо города-отрпавителя создавать поезда
+         * - заставить поезда занимать пути на станции
+         * - заставить поезда загружаться
+         * - заставить поезда ехать
+         * - и т.д.. В обратную сторону симметрично...
+         */
 
         for (GoodsConsumer consumer : goodsConsumers) {
             consumer.start();

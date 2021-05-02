@@ -26,7 +26,7 @@ public class GoodsFactory extends Thread {
                         "factory #" + factoryId + " started to produce " + manufacturedGoodName);
                 Thread.sleep(TimeUtilities.convertSecsToMillis(Long.parseLong(manufacturedGoodConfigs.getProperty("createTime"))));
 
-                Good readyMadeGood = new Good(manufacturedGoodName);
+                Good readyMadeGood = Good.builder().goodName(manufacturedGoodName).build();
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                         "factory #" + factoryId + " finished the producing of " + manufacturedGoodName);
 
