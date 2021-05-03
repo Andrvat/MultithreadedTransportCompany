@@ -2,6 +2,7 @@ import utilities.GoodsConfigurator;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -9,7 +10,7 @@ public class ArrivalStation {
     private static final Logger logger = Logger.getLogger(ArrivalStation.class.getName());
 
     private final ArrayList<GoodsStorage> storages = new ArrayList<>();
-    private final ArrayList<StationsRailwayTracks> railwayTracks = new ArrayList<>();
+    private final ArrayList<StationsRailwayTrack> railwayTracks = new ArrayList<>();
 
     private final ArrivalStationDepot depot;
 
@@ -27,21 +28,22 @@ public class ArrivalStation {
 
     private void initializeGoodsStorages(ConfiguratorManager configuratorManager) {
         ArrayList<String> goodsList = GoodsConfigurator.getGoodsList();
-        int currentId = 0;
         for (String goodName : goodsList) {
             storages.add(GoodsStorage.builder()
                     .storedGoodConfigs(configuratorManager.getGoodsConfigurator().getDataAboutGoodByName(goodName))
-                    .storageId(currentId)
+                    .storageId(UUID.randomUUID().toString())
                     .storedGoodName(configuratorManager.getGoodsConfigurator().getDataAboutGoodByName(goodName).getProperty("name"))
                     .build());
-            currentId++;
         }
     }
 
     private void initializeStationsRailwayTracks(ConfiguratorManager configuratorManager) throws IOException {
         int totalTracksNumber = configuratorManager.getCompanyConfigurator().getArrivalRailwayTracksNumber();
         for (int i = 0; i < totalTracksNumber; i++) {
-            railwayTracks.add(new StationsRailwayTracks());
+            railwayTracks.add(StationsRailwayTrack.builder()
+                    .trackId(UUID.randomUUID().toString())
+                    .isTrackOccupied(false)
+                    .build());
         }
     }
 

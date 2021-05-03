@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class GoodsStorage {
     private static final Logger logger = Logger.getLogger(GoodsStorage.class.getName());
 
-    private final int storageId;
+    private final String storageId;
 
     private final String storedGoodName;
 
@@ -28,7 +28,7 @@ public class GoodsStorage {
         readyGoods.add(good);
 
         LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                storedGoodName + " was loaded to the storage #" + storageId + ". " +
+                storedGoodName + " was loaded to the storage " + storageId + ". " +
                         "Current storage's fullness = " + readyGoods.size());
         notifyAll();
     }
@@ -42,7 +42,7 @@ public class GoodsStorage {
         Good goodToSend = readyGoods.remove();
 
         LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                storedGoodName + " was unloaded from the storage #" + storageId + ". " +
+                storedGoodName + " was unloaded from the storage " + storageId + ". " +
                         "Current storage's fullness = " + readyGoods.size());
         notifyAll();
         return goodToSend;

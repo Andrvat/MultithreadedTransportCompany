@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class GoodsFactory extends Thread {
     private static final Logger logger = Logger.getLogger(GoodsFactory.class.getName());
 
-    private final int factoryId;
+    private final String factoryId;
 
     private final String manufacturedGoodName;
 
@@ -23,19 +23,19 @@ public class GoodsFactory extends Thread {
         while (!isInterrupted()) {
             try {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                        "factory #" + factoryId + " started to produce " + manufacturedGoodName);
+                        "factory " + factoryId + " started to produce " + manufacturedGoodName);
                 Thread.sleep(TimeUtilities.convertSecsToMillis(Long.parseLong(manufacturedGoodConfigs.getProperty("createTime"))));
 
                 Good readyMadeGood = Good.builder().goodName(manufacturedGoodName).build();
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                        "factory #" + factoryId + " finished the producing of " + manufacturedGoodName);
+                        "factory " + factoryId + " finished the producing of " + manufacturedGoodName);
 
                 associateStorage.loadGood(readyMadeGood);
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                        manufacturedGoodName + " was loaded to the associate storage from factory #" + factoryId);
+                        manufacturedGoodName + " was loaded to the associate storage from factory " + factoryId);
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
-                        "Factory #" + factoryId + " stopped by interrupt", exception);
+                        "Factory " + factoryId + " stopped by interrupt", exception);
                 return;
             }
         }

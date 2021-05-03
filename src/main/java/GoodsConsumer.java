@@ -14,7 +14,7 @@ public class GoodsConsumer extends Thread {
 
     private final ArrivalStation arrivalStation;
 
-    private final int consumerId;
+    private final String consumerId;
 
     private final GoodsConfigurator goodsConfigurator;
 
@@ -25,18 +25,18 @@ public class GoodsConsumer extends Thread {
                 String goodName = generateRandomGoodNameFromExisting();
 
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                        "Consumer #" + consumerId + " wants to get " + goodName);
+                        "Consumer " + consumerId + " wants to get " + goodName);
 
                 GoodsStorage storageToVisit = arrivalStation.getStorageByStoredGoodName(goodName);
                 Good consumerGood = storageToVisit.unloadGood();
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                        "Consumer #" + consumerId + " is using " + goodName + "...");
+                        "Consumer " + consumerId + " is using " + goodName + "...");
 
                 Thread.sleep(TimeUtilities.convertSecsToMillis(Long.parseLong(
                         goodsConfigurator.getDataAboutGoodByName(goodName).getProperty("consumeTime"))));
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
-                        "Consumer #" + consumerId + " stopped by interrupt", exception);
+                        "Consumer " + consumerId + " stopped by interrupt", exception);
                 return;
             }
         }

@@ -4,6 +4,7 @@ import javax.naming.InvalidNameException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
+import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -21,6 +22,7 @@ public final class TransportCompanyLauncher {
     private final DirectedRailwayTracksManager railwayTracksManager;
 
     private final ConfiguratorManager configuratorManager;
+    private RailwayMainManager mainManager;
 
     public TransportCompanyLauncher() throws IOException, InvalidNameException {
         configuratorManager = new ConfiguratorManager();
@@ -39,9 +41,8 @@ public final class TransportCompanyLauncher {
 
     }
 
-    public void initializeGoodsFactories() throws InvalidNameException {
+    private void initializeGoodsFactories() throws InvalidNameException {
         ArrayList<String> goodsList = GoodsConfigurator.getGoodsList();
-        int currentId = 0;
         for (String goodName : goodsList) {
             Properties goodData = configuratorManager.getGoodsConfigurator().getDataAboutGoodByName(goodName);
             String forGoodFactoriesNumber = goodData.getProperty("factoriesNumber");
@@ -55,28 +56,62 @@ public final class TransportCompanyLauncher {
                         .manufacturedGoodName(goodName)
                         .manufacturedGoodConfigs(goodData)
                         .associateStorage(departureStation.getAssociateGoodsStorageByName(goodName))
-                        .factoryId(currentId)
+                        .factoryId(UUID.randomUUID().toString())
                         .build());
-
-                currentId++;
             }
         }
     }
 
-    public void initializeGoodsConsumers() {
+    private void initializeGoodsConsumers() {
         for (int i = 0; i < INIT_CONSUMERS_NUMBER; i++) {
             goodsConsumers.add(GoodsConsumer.builder()
                     .arrivalStation(arrivalStation)
                     .goodsConfigurator(configuratorManager.getGoodsConfigurator())
-                    .consumerId(i)
+                    .consumerId(UUID.randomUUID().toString())
                     .build());
         }
+    }
+
+    public ArrayList<GoodsFactory> getGoodsFactories() {
+        return goodsFactories;
+    }
+
+    public ArrayList<GoodsConsumer> getGoodsConsumers() {
+        return goodsConsumers;
+    }
+
+    public DepartureStation getDepartureStation() {
+        return departureStation;
+    }
+
+    public ArrivalStation getArrivalStation() {
+        return arrivalStation;
+    }
+
+    public DirectedRailwayTracksManager getRailwayTracksManager() {
+        return railwayTracksManager;
+    }
+
+    public ConfiguratorManager getConfiguratorManager() {
+        return configuratorManager;
     }
 
     public void launch() throws IOException {
         for (GoodsFactory factory : goodsFactories) {
             factory.start();
         }
+
+        TrainInformationLog informationLog = TrainInformationLog.builder()
+                .arrivalStation(arrivalStation)
+                .departureStation(departureStation)
+                .railwayTracksManager(railwayTracksManager)
+                .build();
+
+        mainManager = RailwayMainManager.builder()
+                .companyLauncher(this)
+                .informationLog(informationLog)
+                .build();
+        mainManager.start();
 
         /**
          * TODO: запустить в отдельном потоке RailwayMainManager, который раскидает дальнейшние задачи
@@ -96,6 +131,8 @@ public final class TransportCompanyLauncher {
         for (GoodsFactory factory : goodsFactories) {
             factory.interrupt();
         }
+
+        mainManager.interrupt();
 
         for (GoodsConsumer consumer : goodsConsumers) {
             consumer.interrupt();
