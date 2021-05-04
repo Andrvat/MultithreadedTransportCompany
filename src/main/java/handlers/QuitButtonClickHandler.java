@@ -1,5 +1,7 @@
 package handlers;
 
+import utilities.LoggerPrintAssistant;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,6 +18,6 @@ public class QuitButtonClickHandler {
                 e.printStackTrace();
             }
         }
-        logger.log(Level.WARNING, "Quit symbol was handled");
+        LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING, "Quit symbol was handled");
     }
 }

@@ -58,6 +58,14 @@ public class DepartureStation {
         depot.startTrainProducing(informationLog);
     }
 
+    public void sendInfoToDepotForReplaceOldTrainToNewOne(Train oldTrain) {
+        depot.replaceOldTrainToNewOne(oldTrain);
+    }
+
+    public void terminateDepot() {
+        depot.stopDepotOperations();
+    }
+
     public RailwayTrack getFreeStationRailwayTrack() throws InterruptedException {
         synchronized (freeRailwayTracks) {
             while (freeRailwayTracks.isEmpty()) {

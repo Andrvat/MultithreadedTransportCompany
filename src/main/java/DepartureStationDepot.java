@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -39,6 +41,8 @@ public class DepartureStationDepot {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                         "Start to produce new train...");
                 Thread.sleep(TimeUtilities.convertSecsToMillis(Long.parseLong(trainProperties.getProperty("createTime"))));
+                System.out.println(Thread.currentThread().getName() + ": int = " + Thread.currentThread().isInterrupted());
+                System.out.println(Thread.currentThread().getName() + ": alive = " + Thread.currentThread().isAlive());
 
                 Train train = Train.builder()
                         .trainProperties(trainProperties)
@@ -71,13 +75,24 @@ public class DepartureStationDepot {
     }
 
     public void stopDepotOperations() {
-        threadPool.shutdown();
-
-        for (Train train : depotTrains) {
-            removeTrainFromUse(train);
+        try {
+            threadPool.shutdown();
+            threadPool.awaitTermination(1, TimeUnit.SECONDS);
+            for (Train train : depotTrains) {
+                removeTrainFromUse(train);
+            }
+        } catch (InterruptedException exception) {
+            LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
+                    "All threads independently completed successfully on the interrupt");
+        } finally {
+            if (!threadPool.isTerminated()) {
+                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
+                        "It is planned to force the termination of all threads in thread pool");
+            }
+            threadPool.shutdownNow();
+            LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+                    "All trains were successfully remove from use. The depot is closing");
         }
-        LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                "All trains were successfully remove from use. The depot is closing");
     }
 
 }

@@ -16,12 +16,7 @@ public class ArrivalStation {
     private final ConcurrentMap<String, GoodsStorage> storages = new ConcurrentHashMap<>();
     private final ConcurrentLinkedQueue<RailwayTrack> freeRailwayTracks = new ConcurrentLinkedQueue<>();
 
-    private final ArrivalStationDepot depot;
-
     public ArrivalStation(ConfiguratorManager configuratorManager) throws IOException {
-        depot = new ArrivalStationDepot(configuratorManager);
-        logger.log(Level.INFO, "Arrival station depot was successfully created");
-
         initializeGoodsStorages(configuratorManager);
         logger.log(Level.INFO, "Goods storages in arrival station were successfully initialized");
 

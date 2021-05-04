@@ -2,9 +2,11 @@ import utilities.LoggerPrintAssistant;
 import utilities.TimeUtilities;
 import utilities.TransportCompanyConfigurator;
 
+import javax.naming.TimeLimitExceededException;
 import java.io.IOException;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -100,7 +102,8 @@ public class DirectedRailwayTracksManager {
         }
     }
 
-    public void startTrainRunningOnTrack(Train train, RailwayTrack track) throws IOException, InterruptedException {
+    public void startTrainRunningOnTrack(Train train, RailwayTrack track)
+            throws IOException, InterruptedException, TimeLimitExceededException {
         int trainTotalTravelTime = (int) Math.ceil((double) companyConfigurator.getStationsDistance() /
                 Integer.parseInt(train.getTrainProperties().getProperty("speed")));
 
@@ -108,5 +111,14 @@ public class DirectedRailwayTracksManager {
                 "Train " + train.getTrainProperties().getProperty("name") +
                         " is running on forward track " + track.getTrackId());
         Thread.sleep(TimeUtilities.convertSecsToMillis(trainTotalTravelTime));
+
+        if (train.getTotalTimeInTrips() >= Integer.parseInt(train.getTrainProperties().getProperty("amortizationTime"))) {
+            throw new TimeLimitExceededException();
+        }
+
+        train.increaseTotalTimeInTripsByValue(trainTotalTravelTime);
+        LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+                "Train " + train.getTrainProperties().getProperty("name") +
+                        " arrived to station by " + track.getTrackId());
     }
 }

@@ -72,30 +72,6 @@ public final class TransportCompanyLauncher {
         }
     }
 
-    public ArrayList<GoodsFactory> getGoodsFactories() {
-        return goodsFactories;
-    }
-
-    public ArrayList<GoodsConsumer> getGoodsConsumers() {
-        return goodsConsumers;
-    }
-
-    public DepartureStation getDepartureStation() {
-        return departureStation;
-    }
-
-    public ArrivalStation getArrivalStation() {
-        return arrivalStation;
-    }
-
-    public DirectedRailwayTracksManager getRailwayTracksManager() {
-        return railwayTracksManager;
-    }
-
-    public ConfiguratorManager getConfiguratorManager() {
-        return configuratorManager;
-    }
-
     public void launch() throws IOException {
         for (GoodsFactory factory : goodsFactories) {
             factory.start();
@@ -108,19 +84,9 @@ public final class TransportCompanyLauncher {
                 .build();
 
         mainManager = RailwayMainManager.builder()
-                .companyLauncher(this)
                 .informationLog(informationLog)
                 .build();
         mainManager.start();
-
-        /**
-         * TODO: запустить в отдельном потоке RailwayMainManager, который раскидает дальнейшние задачи
-         * - заставить депо города-отрпавителя создавать поезда
-         * - заставить поезда занимать пути на станции
-         * - заставить поезда загружаться
-         * - заставить поезда ехать
-         * - и т.д.. В обратную сторону симметрично...
-         */
 
         for (GoodsConsumer consumer : goodsConsumers) {
             consumer.start();
@@ -132,7 +98,7 @@ public final class TransportCompanyLauncher {
             factory.interrupt();
         }
 
-        mainManager.interrupt();
+        mainManager.terminate();
 
         for (GoodsConsumer consumer : goodsConsumers) {
             consumer.interrupt();
