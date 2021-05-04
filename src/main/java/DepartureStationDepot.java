@@ -41,8 +41,6 @@ public class DepartureStationDepot {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                         "Start to produce new train...");
                 Thread.sleep(TimeUtilities.convertSecsToMillis(Long.parseLong(trainProperties.getProperty("createTime"))));
-                System.out.println(Thread.currentThread().getName() + ": int = " + Thread.currentThread().isInterrupted());
-                System.out.println(Thread.currentThread().getName() + ": alive = " + Thread.currentThread().isAlive());
 
                 Train train = Train.builder()
                         .trainProperties(trainProperties)

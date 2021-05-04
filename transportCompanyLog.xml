@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2021-05-04T08:11:40.841392514Z</date>
-  <millis>1620115900841</millis>
-  <nanos>392514</nanos>
+  <date>2021-05-04T08:14:06.264573284Z</date>
+  <millis>1620116046264</millis>
+  <nanos>573284</nanos>
   <sequence>0</sequence>
   <logger>Main</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Logger was successfully redirected to XMLFormatter</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.853772788Z</date>
-  <millis>1620115900853</millis>
-  <nanos>772788</nanos>
+  <date>2021-05-04T08:14:06.277106111Z</date>
+  <millis>1620116046277</millis>
+  <nanos>106111</nanos>
   <sequence>1</sequence>
   <logger>utilities.TransportCompanyConfigurator</logger>
   <level>INFO</level>
@@ -26,9 +26,9 @@
   <message>Transport company configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.863422273Z</date>
-  <millis>1620115900863</millis>
-  <nanos>422273</nanos>
+  <date>2021-05-04T08:14:06.285555847Z</date>
+  <millis>1620116046285</millis>
+  <nanos>555847</nanos>
   <sequence>2</sequence>
   <logger>utilities.GoodsConfigurator</logger>
   <level>INFO</level>
@@ -38,9 +38,9 @@
   <message>computer's configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.865009449Z</date>
-  <millis>1620115900865</millis>
-  <nanos>9449</nanos>
+  <date>2021-05-04T08:14:06.286547682Z</date>
+  <millis>1620116046286</millis>
+  <nanos>547682</nanos>
   <sequence>3</sequence>
   <logger>utilities.GoodsConfigurator</logger>
   <level>INFO</level>
@@ -50,9 +50,9 @@
   <message>drink's configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.866083334Z</date>
-  <millis>1620115900866</millis>
-  <nanos>83334</nanos>
+  <date>2021-05-04T08:14:06.287480038Z</date>
+  <millis>1620116046287</millis>
+  <nanos>480038</nanos>
   <sequence>4</sequence>
   <logger>utilities.GoodsConfigurator</logger>
   <level>INFO</level>
@@ -62,9 +62,9 @@
   <message>tire's configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.867433276Z</date>
-  <millis>1620115900867</millis>
-  <nanos>433276</nanos>
+  <date>2021-05-04T08:14:06.288530267Z</date>
+  <millis>1620116046288</millis>
+  <nanos>530267</nanos>
   <sequence>5</sequence>
   <logger>utilities.GoodsConfigurator</logger>
   <level>INFO</level>
@@ -74,9 +74,9 @@
   <message>toy's configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.870859566Z</date>
-  <millis>1620115900870</millis>
-  <nanos>859566</nanos>
+  <date>2021-05-04T08:14:06.290742826Z</date>
+  <millis>1620116046290</millis>
+  <nanos>742826</nanos>
   <sequence>6</sequence>
   <logger>utilities.TrainsConfigurator</logger>
   <level>INFO</level>
@@ -86,9 +86,9 @@
   <message>avangard's configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.871453868Z</date>
-  <millis>1620115900871</millis>
-  <nanos>453868</nanos>
+  <date>2021-05-04T08:14:06.291584522Z</date>
+  <millis>1620116046291</millis>
+  <nanos>584522</nanos>
   <sequence>7</sequence>
   <logger>utilities.TrainsConfigurator</logger>
   <level>INFO</level>
@@ -98,9 +98,9 @@
   <message>redStar's configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.871964310Z</date>
-  <millis>1620115900871</millis>
-  <nanos>964310</nanos>
+  <date>2021-05-04T08:14:06.292182643Z</date>
+  <millis>1620116046292</millis>
+  <nanos>182643</nanos>
   <sequence>8</sequence>
   <logger>utilities.TrainsConfigurator</logger>
   <level>INFO</level>
@@ -110,9 +110,9 @@
   <message>torpedo's configs were successfully read</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.872133398Z</date>
-  <millis>1620115900872</millis>
-  <nanos>133398</nanos>
+  <date>2021-05-04T08:14:06.292368164Z</date>
+  <millis>1620116046292</millis>
+  <nanos>368164</nanos>
   <sequence>9</sequence>
   <logger>ConfiguratorManager</logger>
   <level>INFO</level>
@@ -122,9 +122,9 @@
   <message>ConfiguratorManager constructor finished. All configs were successfully created</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.872293930Z</date>
-  <millis>1620115900872</millis>
-  <nanos>293930</nanos>
+  <date>2021-05-04T08:14:06.292541429Z</date>
+  <millis>1620116046292</millis>
+  <nanos>541429</nanos>
   <sequence>10</sequence>
   <logger>TransportCompanyLauncher</logger>
   <level>INFO</level>
@@ -134,9 +134,9 @@
   <message>Configurator manager was successfully created</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.874845027Z</date>
-  <millis>1620115900874</millis>
-  <nanos>845027</nanos>
+  <date>2021-05-04T08:14:06.294807805Z</date>
+  <millis>1620116046294</millis>
+  <nanos>807805</nanos>
   <sequence>11</sequence>
   <logger>DepartureStation</logger>
   <level>INFO</level>
@@ -146,9 +146,9 @@
   <message>Departure station depot was successfully created</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.886580067Z</date>
-  <millis>1620115900886</millis>
-  <nanos>580067</nanos>
+  <date>2021-05-04T08:14:06.308199099Z</date>
+  <millis>1620116046308</millis>
+  <nanos>199099</nanos>
   <sequence>12</sequence>
   <logger>DepartureStation</logger>
   <level>INFO</level>
@@ -158,9 +158,9 @@
   <message>Goods storages in departure station were successfully initialized</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.887372699Z</date>
-  <millis>1620115900887</millis>
-  <nanos>372699</nanos>
+  <date>2021-05-04T08:14:06.308990428Z</date>
+  <millis>1620116046308</millis>
+  <nanos>990428</nanos>
   <sequence>13</sequence>
   <logger>DepartureStation</logger>
   <level>INFO</level>
@@ -170,9 +170,9 @@
   <message>Stations railway tracks in departure station were successfully initialized</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.887933346Z</date>
-  <millis>1620115900887</millis>
-  <nanos>933346</nanos>
+  <date>2021-05-04T08:14:06.309585620Z</date>
+  <millis>1620116046309</millis>
+  <nanos>585620</nanos>
   <sequence>14</sequence>
   <logger>ArrivalStation</logger>
   <level>INFO</level>
@@ -182,9 +182,9 @@
   <message>Goods storages in arrival station were successfully initialized</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.888168624Z</date>
-  <millis>1620115900888</millis>
-  <nanos>168624</nanos>
+  <date>2021-05-04T08:14:06.309859247Z</date>
+  <millis>1620116046309</millis>
+  <nanos>859247</nanos>
   <sequence>15</sequence>
   <logger>ArrivalStation</logger>
   <level>INFO</level>
@@ -194,9 +194,9 @@
   <message>Stations railway tracks in arrival station were successfully initialized</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.888331764Z</date>
-  <millis>1620115900888</millis>
-  <nanos>331764</nanos>
+  <date>2021-05-04T08:14:06.310066944Z</date>
+  <millis>1620116046310</millis>
+  <nanos>66944</nanos>
   <sequence>16</sequence>
   <logger>TransportCompanyLauncher</logger>
   <level>INFO</level>
@@ -206,9 +206,9 @@
   <message>All stations were successfully created</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.894304656Z</date>
-  <millis>1620115900894</millis>
-  <nanos>304656</nanos>
+  <date>2021-05-04T08:14:06.317089983Z</date>
+  <millis>1620116046317</millis>
+  <nanos>89983</nanos>
   <sequence>17</sequence>
   <logger>DirectedRailwayTracksManager</logger>
   <level>INFO</level>
@@ -218,9 +218,9 @@
   <message>main: All forward and back tracks were created by directed railway tracks manager</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.894539905Z</date>
-  <millis>1620115900894</millis>
-  <nanos>539905</nanos>
+  <date>2021-05-04T08:14:06.317338889Z</date>
+  <millis>1620116046317</millis>
+  <nanos>338889</nanos>
   <sequence>18</sequence>
   <logger>TransportCompanyLauncher</logger>
   <level>INFO</level>
@@ -230,9 +230,9 @@
   <message>Directed railway tracks manager was successfully created</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.896056573Z</date>
-  <millis>1620115900896</millis>
-  <nanos>56573</nanos>
+  <date>2021-05-04T08:14:06.318918316Z</date>
+  <millis>1620116046318</millis>
+  <nanos>918316</nanos>
   <sequence>19</sequence>
   <logger>TransportCompanyLauncher</logger>
   <level>INFO</level>
@@ -242,177 +242,213 @@
   <message>Factories and consumers were successfully initialized</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.896735126Z</date>
-  <millis>1620115900896</millis>
-  <nanos>735126</nanos>
+  <date>2021-05-04T08:14:06.319678769Z</date>
+  <millis>1620116046319</millis>
+  <nanos>678769</nanos>
   <sequence>20</sequence>
   <logger>GoodsFactory</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>16</thread>
-  <message>Thread-0: factory 86952c98-f942-4e81-b725-6833de5d5969 started to produce computer</message>
+  <thread>17</thread>
+  <message>Thread-1: factory 654d3e9b-a985-4b26-9d98-ef8123c775cb started to produce computer</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.896881194Z</date>
-  <millis>1620115900896</millis>
-  <nanos>881194</nanos>
+  <date>2021-05-04T08:14:06.319827700Z</date>
+  <millis>1620116046319</millis>
+  <nanos>827700</nanos>
   <sequence>26</sequence>
   <logger>GoodsFactory</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>22</thread>
-  <message>Thread-6: factory 359d1ccc-6618-4d02-ac77-a6b353d1ab3a started to produce toy</message>
+  <thread>20</thread>
+  <message>Thread-4: factory e38c8ba3-8102-4773-9543-f0ebf51f1154 started to produce tire</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.896820271Z</date>
-  <millis>1620115900896</millis>
-  <nanos>820271</nanos>
+  <date>2021-05-04T08:14:06.319784325Z</date>
+  <millis>1620116046319</millis>
+  <nanos>784325</nanos>
   <sequence>25</sequence>
   <logger>GoodsFactory</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>21</thread>
-  <message>Thread-5: factory da7224c7-74a1-4d70-8e4c-0c9db27d086a started to produce tire</message>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb started to produce toy</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.896761056Z</date>
-  <millis>1620115900896</millis>
-  <nanos>761056</nanos>
-  <sequence>23</sequence>
-  <logger>GoodsFactory</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>20</thread>
-  <message>Thread-4: factory 968afdd0-473e-48cb-83b4-441b544eec2c started to produce tire</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.896762998Z</date>
-  <millis>1620115900896</millis>
-  <nanos>762998</nanos>
+  <date>2021-05-04T08:14:06.319745927Z</date>
+  <millis>1620116046319</millis>
+  <nanos>745927</nanos>
   <sequence>24</sequence>
   <logger>GoodsFactory</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>17</thread>
-  <message>Thread-1: factory 7e7ad9ff-4a54-42e7-af12-16d7c6fb0eb6 started to produce computer</message>
+  <thread>16</thread>
+  <message>Thread-0: factory 29fb3e93-76f6-4408-b2b6-19be70643679 started to produce computer</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.896738869Z</date>
-  <millis>1620115900896</millis>
-  <nanos>738869</nanos>
+  <date>2021-05-04T08:14:06.319739100Z</date>
+  <millis>1620116046319</millis>
+  <nanos>739100</nanos>
+  <sequence>23</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>21</thread>
+  <message>Thread-5: factory 19684333-6f7c-4407-be53-cc6a458088e2 started to produce tire</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:06.319721327Z</date>
+  <millis>1620116046319</millis>
+  <nanos>721327</nanos>
   <sequence>22</sequence>
   <logger>GoodsFactory</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>18</thread>
-  <message>Thread-2: factory ae2579dc-9b91-4017-a098-de54276badab started to produce computer</message>
+  <thread>19</thread>
+  <message>Thread-3: factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb started to produce drink</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.896734721Z</date>
-  <millis>1620115900896</millis>
-  <nanos>734721</nanos>
+  <date>2021-05-04T08:14:06.319700446Z</date>
+  <millis>1620116046319</millis>
+  <nanos>700446</nanos>
   <sequence>21</sequence>
   <logger>GoodsFactory</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>19</thread>
-  <message>Thread-3: factory 3006d6fa-540e-4c58-8580-6928247d099d started to produce drink</message>
+  <thread>18</thread>
+  <message>Thread-2: factory ba00b6c6-e699-4db2-bf1e-b2681af63f7d started to produce computer</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.897992059Z</date>
-  <millis>1620115900897</millis>
-  <nanos>992059</nanos>
+  <date>2021-05-04T08:14:06.321316934Z</date>
+  <millis>1620116046321</millis>
+  <nanos>316934</nanos>
+  <sequence>30</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>26</thread>
+  <message>Thread-10: Consumer 104ffdf5-4c19-4b29-a1ca-642868602011 wants to get tire</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:06.321248785Z</date>
+  <millis>1620116046321</millis>
+  <nanos>248785</nanos>
+  <sequence>29</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>25</thread>
+  <message>Thread-9: Consumer 590da11d-ecf9-4064-85f4-8b2a7848dcbf wants to get toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:06.321187060Z</date>
+  <millis>1620116046321</millis>
+  <nanos>187060</nanos>
   <sequence>27</sequence>
   <logger>GoodsConsumer</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
   <thread>23</thread>
-  <message>Thread-7: Consumer 9ba7e041-12b6-4771-97ed-0b15020c8b06 wants to get tire</message>
+  <message>Thread-7: Consumer a517ecdc-c69a-4990-8f54-4be649599715 wants to get toy</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.898117426Z</date>
-  <millis>1620115900898</millis>
-  <nanos>117426</nanos>
-  <sequence>31</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>27</thread>
-  <message>Thread-11: Consumer f1441ec8-853c-44e3-9dea-071642124003 wants to get computer</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.898112122Z</date>
-  <millis>1620115900898</millis>
-  <nanos>112122</nanos>
-  <sequence>30</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>25</thread>
-  <message>Thread-9: Consumer 79d3a96c-8cd6-4471-a7cd-cadd20b8b138 wants to get toy</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.898024375Z</date>
-  <millis>1620115900898</millis>
-  <nanos>24375</nanos>
+  <date>2021-05-04T08:14:06.321189795Z</date>
+  <millis>1620116046321</millis>
+  <nanos>189795</nanos>
   <sequence>28</sequence>
   <logger>GoodsConsumer</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>26</thread>
-  <message>Thread-10: Consumer b1a83343-facc-41f5-a8e9-cf66652a35c1 wants to get computer</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.898058001Z</date>
-  <millis>1620115900898</millis>
-  <nanos>58001</nanos>
-  <sequence>29</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
   <thread>24</thread>
-  <message>Thread-8: Consumer bf015808-1e7a-4099-99b3-c01976e6b38b wants to get computer</message>
+  <message>Thread-8: Consumer a26a027c-79dd-4176-9ff7-93c60a1229b2 wants to get tire</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.898624758Z</date>
-  <millis>1620115900898</millis>
-  <nanos>624758</nanos>
+  <date>2021-05-04T08:14:06.321790120Z</date>
+  <millis>1620116046321</millis>
+  <nanos>790120</nanos>
   <sequence>36</sequence>
   <logger>GoodsConsumer</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
   <thread>32</thread>
-  <message>Thread-16: Consumer 75434d43-12ea-4f91-99d7-e6bcdca8fdd3 wants to get drink</message>
+  <message>Thread-16: Consumer 15a6faaf-7b2e-4c4d-8c81-18bd9a359b2b wants to get tire</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.898516094Z</date>
-  <millis>1620115900898</millis>
-  <nanos>516094</nanos>
+  <date>2021-05-04T08:14:06.321695250Z</date>
+  <millis>1620116046321</millis>
+  <nanos>695250</nanos>
   <sequence>35</sequence>
   <logger>GoodsConsumer</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
   <thread>31</thread>
-  <message>Thread-15: Consumer 56c6e2b6-8c37-4a37-bb14-c46132f8fc7c wants to get drink</message>
+  <message>Thread-15: Consumer db8b93d9-1ba5-457d-bbf1-3e919ed8a17b wants to get drink</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.899356808Z</date>
-  <millis>1620115900899</millis>
-  <nanos>356808</nanos>
+  <date>2021-05-04T08:14:06.321586665Z</date>
+  <millis>1620116046321</millis>
+  <nanos>586665</nanos>
+  <sequence>34</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>30</thread>
+  <message>Thread-14: Consumer 61988495-177b-45e6-bcca-8602bffd3062 wants to get drink</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:06.321531129Z</date>
+  <millis>1620116046321</millis>
+  <nanos>531129</nanos>
+  <sequence>33</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>29</thread>
+  <message>Thread-13: Consumer ba8ae1c9-4c4b-42c3-9f85-2e056cc3ac15 wants to get computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:06.321457724Z</date>
+  <millis>1620116046321</millis>
+  <nanos>457724</nanos>
+  <sequence>32</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>28</thread>
+  <message>Thread-12: Consumer 9d75b711-62bf-4e58-8084-d2b70e997b07 wants to get toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:06.321400556Z</date>
+  <millis>1620116046321</millis>
+  <nanos>400556</nanos>
+  <sequence>31</sequence>
+  <logger>GoodsConsumer</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>27</thread>
+  <message>Thread-11: Consumer 9586ecda-b7c0-42cf-9399-1acb6a476eb2 wants to get tire</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:06.322652295Z</date>
+  <millis>1620116046322</millis>
+  <nanos>652295</nanos>
   <sequence>39</sequence>
   <logger>DepartureStationDepot</logger>
   <level>INFO</level>
@@ -422,58 +458,10 @@
   <message>pool-1-thread-3: Start to produce new train...</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:40.898405411Z</date>
-  <millis>1620115900898</millis>
-  <nanos>405411</nanos>
-  <sequence>34</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>30</thread>
-  <message>Thread-14: Consumer 1f6df8a9-4836-4aad-bbf4-6c735277e3ab wants to get tire</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.898314888Z</date>
-  <millis>1620115900898</millis>
-  <nanos>314888</nanos>
-  <sequence>33</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>29</thread>
-  <message>Thread-13: Consumer efeb2938-0da6-4540-b5a8-df111b8df457 wants to get toy</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.898256913Z</date>
-  <millis>1620115900898</millis>
-  <nanos>256913</nanos>
-  <sequence>32</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>28</thread>
-  <message>Thread-12: Consumer 8523edf3-7fff-40e8-8da0-18b931fafcd6 wants to get computer</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.899251256Z</date>
-  <millis>1620115900899</millis>
-  <nanos>251256</nanos>
+  <date>2021-05-04T08:14:06.322585322Z</date>
+  <millis>1620116046322</millis>
+  <nanos>585322</nanos>
   <sequence>38</sequence>
-  <logger>DepartureStationDepot</logger>
-  <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>35</thread>
-  <message>pool-1-thread-2: Start to produce new train...</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:40.899223184Z</date>
-  <millis>1620115900899</millis>
-  <nanos>223184</nanos>
-  <sequence>37</sequence>
   <logger>DepartureStationDepot</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
@@ -482,706 +470,663 @@
   <message>pool-1-thread-1: Start to produce new train...</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:41.599676346Z</date>
-  <millis>1620115901599</millis>
-  <nanos>676346</nanos>
-  <sequence>40</sequence>
-  <logger>handlers.QuitButtonClickHandler</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>1</thread>
-  <message>main: Quit symbol was handled</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:41.601801911Z</date>
-  <millis>1620115901601</millis>
-  <nanos>801911</nanos>
-  <sequence>41</sequence>
-  <logger>GoodsFactory</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>18</thread>
-  <message>Thread-2: Factory ae2579dc-9b91-4017-a098-de54276badab stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>GoodsFactory</class>
-      <method>run</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:41.602330557Z</date>
-  <millis>1620115901602</millis>
-  <nanos>330557</nanos>
-  <sequence>47</sequence>
-  <logger>GoodsFactory</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>19</thread>
-  <message>Thread-3: Factory 3006d6fa-540e-4c58-8580-6928247d099d stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>GoodsFactory</class>
-      <method>run</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:41.602330550Z</date>
-  <millis>1620115901602</millis>
-  <nanos>330550</nanos>
-  <sequence>46</sequence>
-  <logger>GoodsFactory</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>17</thread>
-  <message>Thread-1: Factory 7e7ad9ff-4a54-42e7-af12-16d7c6fb0eb6 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>GoodsFactory</class>
-      <method>run</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:41.602164443Z</date>
-  <millis>1620115901602</millis>
-  <nanos>164443</nanos>
-  <sequence>43</sequence>
-  <logger>GoodsFactory</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>16</thread>
-  <message>Thread-0: Factory 86952c98-f942-4e81-b725-6833de5d5969 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>GoodsFactory</class>
-      <method>run</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:41.602164449Z</date>
-  <millis>1620115901602</millis>
-  <nanos>164449</nanos>
-  <sequence>44</sequence>
-  <logger>GoodsFactory</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>20</thread>
-  <message>Thread-4: Factory 968afdd0-473e-48cb-83b4-441b544eec2c stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>GoodsFactory</class>
-      <method>run</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:41.602195209Z</date>
-  <millis>1620115901602</millis>
-  <nanos>195209</nanos>
-  <sequence>45</sequence>
-  <logger>GoodsFactory</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>21</thread>
-  <message>Thread-5: Factory da7224c7-74a1-4d70-8e4c-0c9db27d086a stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>GoodsFactory</class>
-      <method>run</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:41.602068738Z</date>
-  <millis>1620115901602</millis>
-  <nanos>68738</nanos>
-  <sequence>42</sequence>
-  <logger>GoodsFactory</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>22</thread>
-  <message>Thread-6: Factory 359d1ccc-6618-4d02-ac77-a6b353d1ab3a stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>GoodsFactory</class>
-      <method>run</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.602001699Z</date>
-  <millis>1620115902602</millis>
-  <nanos>1699</nanos>
-  <sequence>48</sequence>
-  <logger>DepartureStationDepot</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>1</thread>
-  <message>main: It is planned to force the termination of all threads in thread pool</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.602979438Z</date>
-  <millis>1620115902602</millis>
-  <nanos>979438</nanos>
-  <sequence>49</sequence>
+  <date>2021-05-04T08:14:06.322583548Z</date>
+  <millis>1620116046322</millis>
+  <nanos>583548</nanos>
+  <sequence>37</sequence>
   <logger>DepartureStationDepot</logger>
   <level>INFO</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>1</thread>
-  <message>main: All trains were successfully remove from use. The depot is closing</message>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.603158661Z</date>
-  <millis>1620115902603</millis>
-  <nanos>158661</nanos>
-  <sequence>52</sequence>
-  <logger>DepartureStationDepot</logger>
-  <level>WARNING</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
   <thread>35</thread>
-  <message>pool-1-thread-2: Production of the train was halted by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>DepartureStationDepot</class>
-      <method>lambda$launchNewTrain$0</method>
-      <line>43</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.Executors$RunnableAdapter</class>
-      <method>call</method>
-      <line>515</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.FutureTask</class>
-      <method>run</method>
-      <line>264</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor</class>
-      <method>runWorker</method>
-      <line>1130</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
-      <method>run</method>
-      <line>630</line>
-    </frame>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>run</method>
-      <line>831</line>
-    </frame>
-  </exception>
+  <message>pool-1-thread-2: Start to produce new train...</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:42.603086906Z</date>
-  <millis>1620115902603</millis>
-  <nanos>86906</nanos>
-  <sequence>51</sequence>
-  <logger>DepartureStationDepot</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>36</thread>
-  <message>pool-1-thread-3: Production of the train was halted by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>DepartureStationDepot</class>
-      <method>lambda$launchNewTrain$0</method>
-      <line>43</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.Executors$RunnableAdapter</class>
-      <method>call</method>
-      <line>515</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.FutureTask</class>
-      <method>run</method>
-      <line>264</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor</class>
-      <method>runWorker</method>
-      <line>1130</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
-      <method>run</method>
-      <line>630</line>
-    </frame>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>run</method>
-      <line>831</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.603051032Z</date>
-  <millis>1620115902603</millis>
-  <nanos>51032</nanos>
-  <sequence>50</sequence>
-  <logger>DepartureStationDepot</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>34</thread>
-  <message>pool-1-thread-1: Production of the train was halted by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException: sleep interrupted</message>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>sleep</method>
-    </frame>
-    <frame>
-      <class>DepartureStationDepot</class>
-      <method>lambda$launchNewTrain$0</method>
-      <line>43</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.Executors$RunnableAdapter</class>
-      <method>call</method>
-      <line>515</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.FutureTask</class>
-      <method>run</method>
-      <line>264</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor</class>
-      <method>runWorker</method>
-      <line>1130</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
-      <method>run</method>
-      <line>630</line>
-    </frame>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>run</method>
-      <line>831</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.603552436Z</date>
-  <millis>1620115902603</millis>
-  <nanos>552436</nanos>
-  <sequence>53</sequence>
-  <logger>RailwayMainManager</logger>
+  <date>2021-05-04T08:14:09.322930385Z</date>
+  <millis>1620116049322</millis>
+  <nanos>930385</nanos>
+  <sequence>40</sequence>
+  <logger>GoodsFactory</logger>
   <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>1</thread>
-  <message>main: Full railway system was successfully stopped</message>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb finished the producing of toy</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:42.608437035Z</date>
-  <millis>1620115902608</millis>
-  <nanos>437035</nanos>
+  <date>2021-05-04T08:14:11.320650269Z</date>
+  <millis>1620116051320</millis>
+  <nanos>650269</nanos>
+  <sequence>41</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>17</thread>
+  <message>Thread-1: factory 654d3e9b-a985-4b26-9d98-ef8123c775cb finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.320879027Z</date>
+  <millis>1620116051320</millis>
+  <nanos>879027</nanos>
+  <sequence>42</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>16</thread>
+  <message>Thread-0: factory 29fb3e93-76f6-4408-b2b6-19be70643679 finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.321578846Z</date>
+  <millis>1620116051321</millis>
+  <nanos>578846</nanos>
+  <sequence>44</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>18</thread>
+  <message>Thread-2: factory ba00b6c6-e699-4db2-bf1e-b2681af63f7d finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.321367521Z</date>
+  <millis>1620116051321</millis>
+  <nanos>367521</nanos>
+  <sequence>43</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb finished the producing of drink</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.332637825Z</date>
+  <millis>1620116051332</millis>
+  <nanos>637825</nanos>
+  <sequence>45</sequence>
+  <logger>DepartureStationDepot</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>34</thread>
+  <message>pool-1-thread-1: Train avangard was created. Send it on its way...</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.333272796Z</date>
+  <millis>1620116051333</millis>
+  <nanos>272796</nanos>
+  <sequence>46</sequence>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>38</thread>
+  <message>Thread-18: Track b1cb9d03-43a6-49f3-8ab6-3ee29a6291be was occupied</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.333561555Z</date>
+  <millis>1620116051333</millis>
+  <nanos>561555</nanos>
+  <sequence>47</sequence>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>38</thread>
+  <message>Thread-18: Train avangard is ready to load with goods...</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.334849788Z</date>
+  <millis>1620116051334</millis>
+  <nanos>849788</nanos>
+  <sequence>48</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the storage 8a294d4c-b74b-4090-b005-3eee79e7a237. Current storage's fullness = 1</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.335166154Z</date>
+  <millis>1620116051335</millis>
+  <nanos>166154</nanos>
+  <sequence>49</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the associate storage from factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:11.335330452Z</date>
+  <millis>1620116051335</millis>
+  <nanos>330452</nanos>
+  <sequence>50</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb started to produce toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:13.324079207Z</date>
+  <millis>1620116053324</millis>
+  <nanos>79207</nanos>
+  <sequence>51</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: drink was loaded to the storage 1cc9db09-96bb-40a9-8090-fdf8ad0e4e2e. Current storage's fullness = 1</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:13.324359735Z</date>
+  <millis>1620116053324</millis>
+  <nanos>359735</nanos>
+  <sequence>52</sequence>
+  <logger>DepartureStationDepot</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>35</thread>
+  <message>pool-1-thread-2: Train redStar was created. Send it on its way...</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:13.325055424Z</date>
+  <millis>1620116053325</millis>
+  <nanos>55424</nanos>
+  <sequence>53</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: drink was loaded to the associate storage from factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:13.326424455Z</date>
+  <millis>1620116053326</millis>
+  <nanos>424455</nanos>
   <sequence>54</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>23</thread>
-  <message>Thread-7: Consumer 9ba7e041-12b6-4771-97ed-0b15020c8b06 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
+  <thread>19</thread>
+  <message>Thread-3: factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb started to produce drink</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:42.608743209Z</date>
-  <millis>1620115902608</millis>
-  <nanos>743209</nanos>
-  <sequence>63</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>32</thread>
-  <message>Thread-16: Consumer 75434d43-12ea-4f91-99d7-e6bcdca8fdd3 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.608727582Z</date>
-  <millis>1620115902608</millis>
-  <nanos>727582</nanos>
-  <sequence>61</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>29</thread>
-  <message>Thread-13: Consumer efeb2938-0da6-4540-b5a8-df111b8df457 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.608730668Z</date>
-  <millis>1620115902608</millis>
-  <nanos>730668</nanos>
-  <sequence>62</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>26</thread>
-  <message>Thread-10: Consumer b1a83343-facc-41f5-a8e9-cf66652a35c1 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.608702945Z</date>
-  <millis>1620115902608</millis>
-  <nanos>702945</nanos>
-  <sequence>59</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>25</thread>
-  <message>Thread-9: Consumer 79d3a96c-8cd6-4471-a7cd-cadd20b8b138 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.608657350Z</date>
-  <millis>1620115902608</millis>
-  <nanos>657350</nanos>
-  <sequence>58</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>28</thread>
-  <message>Thread-12: Consumer 8523edf3-7fff-40e8-8da0-18b931fafcd6 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.608703049Z</date>
-  <millis>1620115902608</millis>
-  <nanos>703049</nanos>
-  <sequence>60</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>27</thread>
-  <message>Thread-11: Consumer f1441ec8-853c-44e3-9dea-071642124003 stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.608643468Z</date>
-  <millis>1620115902608</millis>
-  <nanos>643468</nanos>
-  <sequence>57</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
-  <class>utilities.LoggerPrintAssistant</class>
-  <method>printMessageWithSpecifiedThreadName</method>
-  <thread>31</thread>
-  <message>Thread-15: Consumer 56c6e2b6-8c37-4a37-bb14-c46132f8fc7c stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2021-05-04T08:11:42.608573230Z</date>
-  <millis>1620115902608</millis>
-  <nanos>573230</nanos>
+  <date>2021-05-04T08:14:13.326482229Z</date>
+  <millis>1620116053326</millis>
+  <nanos>482229</nanos>
   <sequence>55</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>30</thread>
-  <message>Thread-14: Consumer 1f6df8a9-4836-4aad-bbf4-6c735277e3ab stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
+  <thread>39</thread>
+  <message>Thread-19: Track 8345a383-f3a5-492f-a9e6-e5d4ba1a9965 was occupied</message>
 </record>
 <record>
-  <date>2021-05-04T08:11:42.608577285Z</date>
-  <millis>1620115902608</millis>
-  <nanos>577285</nanos>
+  <date>2021-05-04T08:14:13.327664400Z</date>
+  <millis>1620116053327</millis>
+  <nanos>664400</nanos>
   <sequence>56</sequence>
-  <logger>GoodsConsumer</logger>
-  <level>WARNING</level>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
   <class>utilities.LoggerPrintAssistant</class>
   <method>printMessageWithSpecifiedThreadName</method>
-  <thread>24</thread>
-  <message>Thread-8: Consumer bf015808-1e7a-4099-99b3-c01976e6b38b stopped by interrupt</message>
-  <exception>
-    <message>java.lang.InterruptedException</message>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-    </frame>
-    <frame>
-      <class>java.lang.Object</class>
-      <method>wait</method>
-      <line>320</line>
-    </frame>
-    <frame>
-      <class>GoodsStorage</class>
-      <method>unloadGood</method>
-      <line>38</line>
-    </frame>
-    <frame>
-      <class>GoodsConsumer</class>
-      <method>run</method>
-      <line>31</line>
-    </frame>
-  </exception>
+  <thread>39</thread>
+  <message>Thread-19: Train redStar is ready to load with goods...</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:14.321913210Z</date>
+  <millis>1620116054321</millis>
+  <nanos>913210</nanos>
+  <sequence>57</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>17</thread>
+  <message>Thread-1: computer was loaded to the storage c28e12f5-8fe3-4f4e-864a-bdec45422549. Current storage's fullness = 1</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:14.322666063Z</date>
+  <millis>1620116054322</millis>
+  <nanos>666063</nanos>
+  <sequence>58</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>17</thread>
+  <message>Thread-1: computer was loaded to the associate storage from factory 654d3e9b-a985-4b26-9d98-ef8123c775cb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:14.323192864Z</date>
+  <millis>1620116054323</millis>
+  <nanos>192864</nanos>
+  <sequence>59</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>17</thread>
+  <message>Thread-1: factory 654d3e9b-a985-4b26-9d98-ef8123c775cb started to produce computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:14.335775731Z</date>
+  <millis>1620116054335</millis>
+  <nanos>775731</nanos>
+  <sequence>60</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb finished the producing of toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:16.337028365Z</date>
+  <millis>1620116056337</millis>
+  <nanos>28365</nanos>
+  <sequence>61</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the storage 8a294d4c-b74b-4090-b005-3eee79e7a237. Current storage's fullness = 2</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:16.337776672Z</date>
+  <millis>1620116056337</millis>
+  <nanos>776672</nanos>
+  <sequence>62</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the associate storage from factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:16.338281187Z</date>
+  <millis>1620116056338</millis>
+  <nanos>281187</nanos>
+  <sequence>63</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb started to produce toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:18.324089243Z</date>
+  <millis>1620116058324</millis>
+  <nanos>89243</nanos>
+  <sequence>64</sequence>
+  <logger>DepartureStationDepot</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>36</thread>
+  <message>pool-1-thread-3: Train torpedo was created. Send it on its way...</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:18.325518825Z</date>
+  <millis>1620116058325</millis>
+  <nanos>518825</nanos>
+  <sequence>65</sequence>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>40</thread>
+  <message>Thread-20: Track 6360e298-6c21-4a28-9c39-9731b20cec8d was occupied</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:18.326162214Z</date>
+  <millis>1620116058326</millis>
+  <nanos>162214</nanos>
+  <sequence>66</sequence>
+  <logger>DepartureStation</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>40</thread>
+  <message>Thread-20: Train torpedo is ready to load with goods...</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:18.327131922Z</date>
+  <millis>1620116058327</millis>
+  <nanos>131922</nanos>
+  <sequence>67</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb finished the producing of drink</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:19.323831743Z</date>
+  <millis>1620116059323</millis>
+  <nanos>831743</nanos>
+  <sequence>68</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>17</thread>
+  <message>Thread-1: factory 654d3e9b-a985-4b26-9d98-ef8123c775cb finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:19.323914476Z</date>
+  <millis>1620116059323</millis>
+  <nanos>914476</nanos>
+  <sequence>69</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>39</thread>
+  <message>Thread-19: computer was unloaded from the storage c28e12f5-8fe3-4f4e-864a-bdec45422549. Current storage's fullness = 0</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:19.339161788Z</date>
+  <millis>1620116059339</millis>
+  <nanos>161788</nanos>
+  <sequence>70</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb finished the producing of toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:20.328077462Z</date>
+  <millis>1620116060328</millis>
+  <nanos>77462</nanos>
+  <sequence>71</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: drink was loaded to the storage 1cc9db09-96bb-40a9-8090-fdf8ad0e4e2e. Current storage's fullness = 2</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:20.328590167Z</date>
+  <millis>1620116060328</millis>
+  <nanos>590167</nanos>
+  <sequence>72</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: drink was loaded to the associate storage from factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:20.328792698Z</date>
+  <millis>1620116060328</millis>
+  <nanos>792698</nanos>
+  <sequence>73</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb started to produce drink</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:21.320541970Z</date>
+  <millis>1620116061320</millis>
+  <nanos>541970</nanos>
+  <sequence>74</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>20</thread>
+  <message>Thread-4: factory e38c8ba3-8102-4773-9543-f0ebf51f1154 finished the producing of tire</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:21.321068706Z</date>
+  <millis>1620116061321</millis>
+  <nanos>68706</nanos>
+  <sequence>75</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>21</thread>
+  <message>Thread-5: factory 19684333-6f7c-4407-be53-cc6a458088e2 finished the producing of tire</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:21.340187307Z</date>
+  <millis>1620116061340</millis>
+  <nanos>187307</nanos>
+  <sequence>76</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the storage 8a294d4c-b74b-4090-b005-3eee79e7a237. Current storage's fullness = 3</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:21.340906886Z</date>
+  <millis>1620116061340</millis>
+  <nanos>906886</nanos>
+  <sequence>77</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the associate storage from factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:21.341366771Z</date>
+  <millis>1620116061341</millis>
+  <nanos>366771</nanos>
+  <sequence>78</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb started to produce toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:22.325544144Z</date>
+  <millis>1620116062325</millis>
+  <nanos>544144</nanos>
+  <sequence>79</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>18</thread>
+  <message>Thread-2: computer was loaded to the storage c28e12f5-8fe3-4f4e-864a-bdec45422549. Current storage's fullness = 1</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:22.326280842Z</date>
+  <millis>1620116062326</millis>
+  <nanos>280842</nanos>
+  <sequence>80</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>18</thread>
+  <message>Thread-2: computer was loaded to the associate storage from factory ba00b6c6-e699-4db2-bf1e-b2681af63f7d</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:22.326787343Z</date>
+  <millis>1620116062326</millis>
+  <nanos>787343</nanos>
+  <sequence>81</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>18</thread>
+  <message>Thread-2: factory ba00b6c6-e699-4db2-bf1e-b2681af63f7d started to produce computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:24.342093245Z</date>
+  <millis>1620116064342</millis>
+  <nanos>93245</nanos>
+  <sequence>82</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb finished the producing of toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:25.326968937Z</date>
+  <millis>1620116065326</millis>
+  <nanos>968937</nanos>
+  <sequence>83</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>16</thread>
+  <message>Thread-0: computer was loaded to the storage c28e12f5-8fe3-4f4e-864a-bdec45422549. Current storage's fullness = 2</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:25.328041816Z</date>
+  <millis>1620116065328</millis>
+  <nanos>41816</nanos>
+  <sequence>84</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>16</thread>
+  <message>Thread-0: computer was loaded to the associate storage from factory 29fb3e93-76f6-4408-b2b6-19be70643679</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:25.329161917Z</date>
+  <millis>1620116065329</millis>
+  <nanos>161917</nanos>
+  <sequence>85</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb finished the producing of drink</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:25.334864014Z</date>
+  <millis>1620116065334</millis>
+  <nanos>864014</nanos>
+  <sequence>86</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>16</thread>
+  <message>Thread-0: factory 29fb3e93-76f6-4408-b2b6-19be70643679 started to produce computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:26.343128939Z</date>
+  <millis>1620116066343</millis>
+  <nanos>128939</nanos>
+  <sequence>87</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the storage 8a294d4c-b74b-4090-b005-3eee79e7a237. Current storage's fullness = 4</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:26.343417704Z</date>
+  <millis>1620116066343</millis>
+  <nanos>417704</nanos>
+  <sequence>88</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: toy was loaded to the associate storage from factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:26.343576136Z</date>
+  <millis>1620116066343</millis>
+  <nanos>576136</nanos>
+  <sequence>89</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>22</thread>
+  <message>Thread-6: factory 3e6f706b-b3b1-4558-b9a8-803e1ee8abcb started to produce toy</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:27.327740903Z</date>
+  <millis>1620116067327</millis>
+  <nanos>740903</nanos>
+  <sequence>90</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>18</thread>
+  <message>Thread-2: factory ba00b6c6-e699-4db2-bf1e-b2681af63f7d finished the producing of computer</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:27.335844890Z</date>
+  <millis>1620116067335</millis>
+  <nanos>844890</nanos>
+  <sequence>91</sequence>
+  <logger>GoodsStorage</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: drink was loaded to the storage 1cc9db09-96bb-40a9-8090-fdf8ad0e4e2e. Current storage's fullness = 3</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:27.336547428Z</date>
+  <millis>1620116067336</millis>
+  <nanos>547428</nanos>
+  <sequence>92</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: drink was loaded to the associate storage from factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb</message>
+</record>
+<record>
+  <date>2021-05-04T08:14:27.337048597Z</date>
+  <millis>1620116067337</millis>
+  <nanos>48597</nanos>
+  <sequence>93</sequence>
+  <logger>GoodsFactory</logger>
+  <level>INFO</level>
+  <class>utilities.LoggerPrintAssistant</class>
+  <method>printMessageWithSpecifiedThreadName</method>
+  <thread>19</thread>
+  <message>Thread-3: factory fd90cf1c-c4c0-423d-bd33-b59cd263c0bb started to produce drink</message>
 </record>
 </log>
