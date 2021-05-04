@@ -3,10 +3,8 @@ import utilities.TimeUtilities;
 import utilities.TransportCompanyConfigurator;
 
 import javax.naming.TimeLimitExceededException;
-import java.io.IOException;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -18,7 +16,7 @@ public class DirectedRailwayTracksManager {
 
     private final TransportCompanyConfigurator companyConfigurator;
 
-    public DirectedRailwayTracksManager(TransportCompanyConfigurator companyConfigurator) throws IOException {
+    public DirectedRailwayTracksManager(TransportCompanyConfigurator companyConfigurator) {
         this.companyConfigurator = companyConfigurator;
 
         initializeDirectedRailwayTracks();
@@ -26,7 +24,7 @@ public class DirectedRailwayTracksManager {
                 "All forward and back tracks were created by directed railway tracks manager");
     }
 
-    private void initializeDirectedRailwayTracks() throws IOException {
+    private void initializeDirectedRailwayTracks() {
         int totalForwardRailwayTracksNumber = companyConfigurator.getForwardRailwayTracksNumber();
         for (int i = 0; i < totalForwardRailwayTracksNumber; i++) {
             freeForwardRailwayTracks.add(RailwayTrack.builder()
@@ -103,7 +101,7 @@ public class DirectedRailwayTracksManager {
     }
 
     public void startTrainRunningOnTrack(Train train, RailwayTrack track)
-            throws IOException, InterruptedException, TimeLimitExceededException {
+            throws InterruptedException, TimeLimitExceededException {
         int trainTotalTravelTime = (int) Math.ceil((double) companyConfigurator.getStationsDistance() /
                 Integer.parseInt(train.getTrainProperties().getProperty("speed")));
 

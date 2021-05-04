@@ -33,48 +33,28 @@ public class TransportCompanyConfigurator {
         return inputStream;
     }
 
-    public int getStationsDistance() throws IOException {
+    public int getStationsDistance() {
         String stationsDistance = railwayTransportSystemConf.getProperty("stationsDistance");
-        if (stationsDistance == null) {
-            logger.log(Level.SEVERE, "There is no stationsDistance field in the *.properties file");
-            throw new IOException();
-        }
         return Integer.parseInt(stationsDistance);
     }
 
-    public int getDepartureRailwayTracksNumber() throws IOException {
+    public int getDepartureRailwayTracksNumber() {
         String departureRailwayTracksNumber = railwayTransportSystemConf.getProperty("departureRailwayTracksNumber");
-        if (departureRailwayTracksNumber == null) {
-            logger.log(Level.SEVERE, "There is no departureRailwayTracksNumber field in the *.properties file");
-            throw new IOException();
-        }
         return Integer.parseInt(departureRailwayTracksNumber);
     }
 
-    public int getArrivalRailwayTracksNumber() throws IOException {
+    public int getArrivalRailwayTracksNumber() {
         String arrivalRailwayTracksNumber = railwayTransportSystemConf.getProperty("arrivalRailwayTracksNumber");
-        if (arrivalRailwayTracksNumber == null) {
-            logger.log(Level.SEVERE, "There is no arrivalRailwayTracksNumber field in the *.properties file");
-            throw new IOException();
-        }
         return Integer.parseInt(arrivalRailwayTracksNumber);
     }
 
-    public int getForwardRailwayTracksNumber() throws IOException {
+    public int getForwardRailwayTracksNumber() {
         String forwardRailwayTracksNumber = railwayTransportSystemConf.getProperty("forwardRailwayTracksNumber");
-        if (forwardRailwayTracksNumber == null) {
-            logger.log(Level.SEVERE, "There is no forwardRailwayTracksNumber field in the *.properties file");
-            throw new IOException();
-        }
         return Integer.parseInt(forwardRailwayTracksNumber);
     }
 
-    public int getBackRailwayTracksNumber() throws IOException {
+    public int getBackRailwayTracksNumber() {
         String backRailwayTracksNumber = railwayTransportSystemConf.getProperty("backRailwayTracksNumber");
-        if (backRailwayTracksNumber == null) {
-            logger.log(Level.SEVERE, "There is no backRailwayTracksNumber field in the *.properties file");
-            throw new IOException();
-        }
         return Integer.parseInt(backRailwayTracksNumber);
     }
 

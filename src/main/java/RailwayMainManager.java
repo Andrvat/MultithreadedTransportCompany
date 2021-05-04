@@ -8,15 +8,15 @@ import java.util.logging.Logger;
 public class RailwayMainManager extends Thread {
     private static final Logger logger = Logger.getLogger(RailwayMainManager.class.getName());
 
-    private final TrainInformationLog informationLog;
+    private final TrainInformationManifest informationManifest;
 
     @Override
     public void run() {
-       informationLog.getDepartureStation().startRunningTrainsInUse(informationLog);
+       informationManifest.getDepartureStation().startRunningTrainsInUse(informationManifest);
     }
 
     public void terminate() {
-        informationLog.getDepartureStation().terminateDepot();
+        informationManifest.getDepartureStation().terminateDepot();
         this.interrupt();
         LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                 "Full railway system was successfully stopped");

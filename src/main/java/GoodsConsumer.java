@@ -27,10 +27,10 @@ public class GoodsConsumer extends Thread {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                         "Consumer " + consumerId + " wants to get " + goodName);
 
-                GoodsStorage storageToVisit = arrivalStation.getStorageByStoredGoodName(goodName);
+                GoodsStorage storageToVisit = arrivalStation.getAssociateGoodsStorageByName(goodName);
                 Good consumerGood = storageToVisit.unloadGood();
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                        "Consumer " + consumerId + " is using " + goodName + "...");
+                        "Consumer " + consumerId + " is using " + consumerGood.getGoodName() + "...");
 
                 Thread.sleep(TimeUtilities.convertSecsToMillis(Long.parseLong(
                         goodsConfigurator.getDataAboutGoodByName(goodName).getProperty("consumeTime"))));

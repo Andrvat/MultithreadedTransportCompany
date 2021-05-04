@@ -14,7 +14,7 @@ public class DepartureStationDepot {
     private static final Logger logger = Logger.getLogger(DepartureStationDepot.class.getName());
 
     private final TrainsConfigurator trainsConfigurator;
-    private TrainInformationLog informationLog;
+    private TrainInformationManifest informationManifest;
 
     private final ArrayList<Train> depotTrains = new ArrayList<>();
     private final ExecutorService threadPool;
@@ -24,8 +24,8 @@ public class DepartureStationDepot {
         threadPool = Executors.newFixedThreadPool(TrainsConfigurator.trainsList.size());
     }
 
-    public void startTrainProducing(TrainInformationLog informationLog) {
-        this.informationLog = informationLog;
+    public void startTrainProducing(TrainInformationManifest informationManifest) {
+        this.informationManifest = informationManifest;
 
         ArrayList<String> trainsNames = TrainsConfigurator.trainsList;
         for (String train : trainsNames) {
@@ -43,7 +43,8 @@ public class DepartureStationDepot {
 
                 Train train = Train.builder()
                         .trainProperties(trainProperties)
-                        .informationLog(informationLog)
+                        .informationManifest(informationManifest)
+                        .totalTimeInTrips(0)
                         .build();
                 depotTrains.add(train);
 

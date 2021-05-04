@@ -1,7 +1,7 @@
 import lombok.Builder;
 
 @Builder
-public class TrainInformationLog {
+public class TrainInformationManifest {
     private final DepartureStation departureStation;
     private final ArrivalStation arrivalStation;
 

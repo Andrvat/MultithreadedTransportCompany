@@ -1,6 +1,5 @@
 import handlers.QuitButtonClickHandler;
 
-import javax.naming.InvalidNameException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.Level;
@@ -12,7 +11,7 @@ final public class Main {
 
     public static void main(String[] args) {
         try {
-            InputStream loggerConfigFile = Main.class.getResourceAsStream("/loggerConfigs.properties");
+            InputStream loggerConfigFile = Main.class.getResourceAsStream("/loggers/loggerConfigs.properties");
             LogManager.getLogManager().readConfiguration(loggerConfigFile);
             logger.log(Level.INFO, "Logger was successfully redirected to XMLFormatter");
         } catch (IOException exception) {
@@ -24,7 +23,7 @@ final public class Main {
             companyLauncher.launch();
             QuitButtonClickHandler.handle();
             companyLauncher.terminate();
-        } catch (IOException | InvalidNameException exception) {
+        } catch (IOException exception) {
             logger.log(Level.SEVERE, "Transport company could not work correctly. Emulator finished...", exception);
         }
     }

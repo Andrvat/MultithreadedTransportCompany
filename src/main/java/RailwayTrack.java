@@ -14,10 +14,6 @@ public class RailwayTrack {
         isTrackOccupied = false;
     }
 
-    public boolean isTrackOccupied() {
-        return isTrackOccupied;
-    }
-
     public String getTrackId() {
         return trackId;
     }

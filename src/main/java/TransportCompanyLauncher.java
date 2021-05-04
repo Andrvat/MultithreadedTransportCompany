@@ -1,6 +1,5 @@
 import utilities.GoodsConfigurator;
 
-import javax.naming.InvalidNameException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
@@ -24,7 +23,7 @@ public final class TransportCompanyLauncher {
     private final ConfiguratorManager configuratorManager;
     private RailwayMainManager mainManager;
 
-    public TransportCompanyLauncher() throws IOException, InvalidNameException {
+    public TransportCompanyLauncher() throws IOException {
         configuratorManager = new ConfiguratorManager();
         logger.log(Level.INFO, "Configurator manager was successfully created");
 
@@ -41,17 +40,11 @@ public final class TransportCompanyLauncher {
 
     }
 
-    private void initializeGoodsFactories() throws InvalidNameException {
+    private void initializeGoodsFactories() {
         ArrayList<String> goodsList = GoodsConfigurator.getGoodsList();
         for (String goodName : goodsList) {
             Properties goodData = configuratorManager.getGoodsConfigurator().getDataAboutGoodByName(goodName);
-            String forGoodFactoriesNumber = goodData.getProperty("factoriesNumber");
-            if (forGoodFactoriesNumber == null) {
-                logger.log(Level.SEVERE, "There is no factoriesNumber field in the *.properties file");
-                throw new InvalidNameException();
-            }
-
-            for (int i = 0; i < Integer.parseInt(forGoodFactoriesNumber); i++) {
+            for (int i = 0; i < Integer.parseInt(goodData.getProperty("factoriesNumber")); i++) {
                 goodsFactories.add(GoodsFactory.builder()
                         .manufacturedGoodName(goodName)
                         .manufacturedGoodConfigs(goodData)
@@ -72,19 +65,19 @@ public final class TransportCompanyLauncher {
         }
     }
 
-    public void launch() throws IOException {
+    public void launch() {
         for (GoodsFactory factory : goodsFactories) {
             factory.start();
         }
 
-        TrainInformationLog informationLog = TrainInformationLog.builder()
+        TrainInformationManifest informationManifest = TrainInformationManifest.builder()
                 .arrivalStation(arrivalStation)
                 .departureStation(departureStation)
                 .railwayTracksManager(railwayTracksManager)
                 .build();
 
         mainManager = RailwayMainManager.builder()
-                .informationLog(informationLog)
+                .informationManifest(informationManifest)
                 .build();
         mainManager.start();
 

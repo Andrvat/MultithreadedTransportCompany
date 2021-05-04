@@ -1,8 +1,8 @@
 import lombok.Builder;
 import utilities.LoggerPrintAssistant;
+import utilities.TimeUtilities;
 
 import javax.naming.TimeLimitExceededException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -14,15 +14,11 @@ public class Train extends Thread {
 
     private final Properties trainProperties;
 
-    private final TrainInformationLog informationLog;
+    private final TrainInformationManifest informationManifest;
 
-    private int totalTimeInTrips = 0;
+    private int totalTimeInTrips;
 
     private final ArrayList<Good> transportedGoods = new ArrayList<>();
-
-    public Properties getTrainProperties() {
-        return trainProperties;
-    }
 
     @Override
     public void run() {
@@ -30,7 +26,7 @@ public class Train extends Thread {
         while (totalTimeInTrips < amortizationTime) {
             RailwayTrack departureFreeRailwayTrackForSending;
             try {
-                departureFreeRailwayTrackForSending = informationLog.getDepartureStation().getFreeStationRailwayTrack();
+                departureFreeRailwayTrackForSending = informationManifest.getDepartureStation().getFreeStationRailwayTrack();
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting for free departure track", exception);
@@ -38,7 +34,7 @@ public class Train extends Thread {
             }
 
             try {
-                informationLog.getDepartureStation().loadTrainWithGoodsByCapacities(this);
+                informationManifest.getDepartureStation().loadTrainWithGoodsByCapacities(this);
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting for goods in storages", exception);
@@ -47,8 +43,8 @@ public class Train extends Thread {
 
             RailwayTrack forwardRailwayTrack;
             try {
-                forwardRailwayTrack = informationLog.getRailwayTracksManager().getFreeForwardRailwayTrack();
-                informationLog.getDepartureStation().freeOccupiedStationRailwayTrack(departureFreeRailwayTrackForSending);
+                forwardRailwayTrack = informationManifest.getRailwayTracksManager().getFreeForwardRailwayTrack();
+                informationManifest.getDepartureStation().freeOccupiedStationRailwayTrack(departureFreeRailwayTrackForSending);
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting for free forward tracks", exception);
@@ -56,22 +52,22 @@ public class Train extends Thread {
             }
 
             try {
-                informationLog.getRailwayTracksManager().startTrainRunningOnTrack(this, forwardRailwayTrack);
-            } catch (IOException | InterruptedException exception) {
+                informationManifest.getRailwayTracksManager().startTrainRunningOnTrack(this, forwardRailwayTrack);
+            } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting running on forward railway track", exception);
                 return;
             } catch (TimeLimitExceededException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped due to exceeding the depreciation time during the forward trip", exception);
-                informationLog.getDepartureStation().sendInfoToDepotForReplaceOldTrainToNewOne(this);
+                informationManifest.getDepartureStation().sendInfoToDepotForReplaceOldTrainToNewOne(this);
                 return;
             }
 
             RailwayTrack arrivalFreeRailwayTrackForGetting;
             try {
-                arrivalFreeRailwayTrackForGetting = informationLog.getArrivalStation().getFreeStationRailwayTrack();
-                informationLog.getRailwayTracksManager().freeOccupiedForwardRailwayTrack(forwardRailwayTrack);
+                arrivalFreeRailwayTrackForGetting = informationManifest.getArrivalStation().getFreeStationRailwayTrack();
+                informationManifest.getRailwayTracksManager().freeOccupiedForwardRailwayTrack(forwardRailwayTrack);
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting for free arrival track", exception);
@@ -79,7 +75,7 @@ public class Train extends Thread {
             }
 
             try {
-                informationLog.getArrivalStation().unloadTrainWithGoodsToAssociateStorages(this);
+                informationManifest.getArrivalStation().unloadTrainWithGoodsToAssociateStorages(this);
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting for free places in arrival storages", exception);
@@ -87,8 +83,8 @@ public class Train extends Thread {
             }
 
             try {
-                informationLog.getArrivalStation().freeOccupiedStationRailwayTrack(arrivalFreeRailwayTrackForGetting);
-                Thread.sleep(1000);
+                informationManifest.getArrivalStation().freeOccupiedStationRailwayTrack(arrivalFreeRailwayTrackForGetting);
+                Thread.sleep(TimeUtilities.convertSecsToMillis(1));
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while busy-waiting in arrival station", exception);
@@ -97,7 +93,7 @@ public class Train extends Thread {
             
             RailwayTrack arrivalFreeRailwayTrackForSending;
             try {
-                arrivalFreeRailwayTrackForSending = informationLog.getArrivalStation().getFreeStationRailwayTrack();
+                arrivalFreeRailwayTrackForSending = informationManifest.getArrivalStation().getFreeStationRailwayTrack();
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting for free arrival track", exception);
@@ -107,8 +103,8 @@ public class Train extends Thread {
 
             RailwayTrack backRailwayTrack;
             try {
-                backRailwayTrack = informationLog.getRailwayTracksManager().getFreeBackRailwayTrack();
-                informationLog.getArrivalStation().freeOccupiedStationRailwayTrack(arrivalFreeRailwayTrackForSending);
+                backRailwayTrack = informationManifest.getRailwayTracksManager().getFreeBackRailwayTrack();
+                informationManifest.getArrivalStation().freeOccupiedStationRailwayTrack(arrivalFreeRailwayTrackForSending);
             } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting for free back tracks", exception);
@@ -116,23 +112,27 @@ public class Train extends Thread {
             }
 
             try {
-                informationLog.getRailwayTracksManager().startTrainRunningOnTrack(this, backRailwayTrack);
-            } catch (IOException | InterruptedException exception) {
+                informationManifest.getRailwayTracksManager().startTrainRunningOnTrack(this, backRailwayTrack);
+            } catch (InterruptedException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped while waiting running on back railway track", exception);
                 return;
             } catch (TimeLimitExceededException exception) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                         "Use of train was stopped due to exceeding the depreciation time during the back trip", exception);
-                informationLog.getDepartureStation().sendInfoToDepotForReplaceOldTrainToNewOne(this);
+                informationManifest.getDepartureStation().sendInfoToDepotForReplaceOldTrainToNewOne(this);
                 return;
             }
 
-            informationLog.getRailwayTracksManager().freeOccupiedBackRailwayTrack(backRailwayTrack);
+            informationManifest.getRailwayTracksManager().freeOccupiedBackRailwayTrack(backRailwayTrack);
 
             LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
                     "The train has completed a full cycle. The train proceeds to load the goods...");
         }
+    }
+
+    public Properties getTrainProperties() {
+        return trainProperties;
     }
 
     public void increaseTotalTimeInTripsByValue(int value) {
