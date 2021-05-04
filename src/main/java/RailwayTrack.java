@@ -1,7 +1,7 @@
 import lombok.Builder;
 
 @Builder
-public class StationsRailwayTrack {
+public class RailwayTrack {
     private final String trackId;
 
     private boolean isTrackOccupied;

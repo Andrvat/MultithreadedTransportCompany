@@ -51,4 +51,8 @@ public class GoodsStorage {
     public String getStoredGoodName() {
         return storedGoodName;
     }
+
+    public String getStorageId() {
+        return storageId;
+    }
 }

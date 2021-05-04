@@ -3,14 +3,17 @@ import utilities.LoggerPrintAssistant;
 
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ConcurrentMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class DepartureStation {
     private static final Logger logger = Logger.getLogger(DepartureStation.class.getName());
 
-    private final HashMap<String, GoodsStorage> storages = new LinkedHashMap<>();
-    private final Queue<StationsRailwayTrack> freeRailwayTracks = new LinkedList<>();
+    private final ConcurrentMap<String, GoodsStorage> storages = new ConcurrentHashMap<>();
+    private final ConcurrentLinkedQueue<RailwayTrack> freeRailwayTracks = new ConcurrentLinkedQueue<>();
 
     private final DepartureStationDepot depot;
 
@@ -29,7 +32,7 @@ public class DepartureStation {
     private void initializeGoodsStorages(ConfiguratorManager configuratorManager) {
         ArrayList<String> goodsList = GoodsConfigurator.getGoodsList();
         for (String goodName : goodsList) {
-            storages.put(goodName, GoodsStorage.builder()
+            storages.putIfAbsent(goodName, GoodsStorage.builder()
                     .storedGoodConfigs(configuratorManager.getGoodsConfigurator().getDataAboutGoodByName(goodName))
                     .storageId(UUID.randomUUID().toString())
                     .storedGoodName(configuratorManager.getGoodsConfigurator().getDataAboutGoodByName(goodName).getProperty("name"))
@@ -40,7 +43,7 @@ public class DepartureStation {
     private void initializeStationsRailwayTracks(ConfiguratorManager configuratorManager) throws IOException {
         int totalTracksNumber = configuratorManager.getCompanyConfigurator().getDepartureRailwayTracksNumber();
         for (int i = 0; i < totalTracksNumber; i++) {
-            freeRailwayTracks.add(StationsRailwayTrack.builder()
+            freeRailwayTracks.add(RailwayTrack.builder()
                     .trackId(UUID.randomUUID().toString())
                     .isTrackOccupied(false)
                     .build());
@@ -55,7 +58,7 @@ public class DepartureStation {
         depot.startTrainProducing(informationLog);
     }
 
-    public StationsRailwayTrack getFreeStationRailwayTrack() throws InterruptedException {
+    public RailwayTrack getFreeStationRailwayTrack() throws InterruptedException {
         synchronized (freeRailwayTracks) {
             while (freeRailwayTracks.isEmpty()) {
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
@@ -63,7 +66,7 @@ public class DepartureStation {
                 freeRailwayTracks.wait();
             }
 
-            StationsRailwayTrack track = freeRailwayTracks.remove();
+            RailwayTrack track = freeRailwayTracks.remove();
             track.occupyTrack();
 
             LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
@@ -74,7 +77,7 @@ public class DepartureStation {
         }
     }
 
-    public void freeOccupiedStationRailwayTrack(StationsRailwayTrack track) {
+    public void freeOccupiedStationRailwayTrack(RailwayTrack track) {
         synchronized (freeRailwayTracks) {
             freeRailwayTracks.add(track);
             LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
@@ -83,21 +86,47 @@ public class DepartureStation {
         }
     }
 
+    /// TODO: можно использовать потокобезопасный хэш-мап или обычный, но синхронизироваться по всем складам, работая по факту только с одним из
+//    public void loadTrainWithGoodsByCapacities(Train train) throws InterruptedException {
+//        LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+//                "Train " + train.getTrainProperties().getProperty("name") + " is ready to load with goods...");
+//        synchronized (storages) {
+//            ArrayList<String> goodsList = GoodsConfigurator.getGoodsList();
+//            for (String goodName : goodsList) {
+//                GoodsStorage storage = storages.get(goodName);
+//                long goodsNumberToLoad = Long.parseLong(train.getTrainProperties().getProperty(goodName + "s" + "Capacity"));
+//                for (int i = 0; i < goodsNumberToLoad; i++) {
+//                    train.loadGood(storage.unloadGood());
+//                    LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+//                            "Train " + train.getTrainProperties().getProperty("name") + " loaded " + goodName);
+//                }
+//                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+//                        "Train " + train.getTrainProperties().getProperty("name") + " loaded all fitable " + goodName);
+//            }
+//            LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+//                    "Train " + train.getTrainProperties().getProperty("name") + " was fully loaded");
+//            storages.notifyAll();
+//        }
+//    }
+
     public void loadTrainWithGoodsByCapacities(Train train) throws InterruptedException {
-        synchronized (storages) {
-            ArrayList<String> goodsList = GoodsConfigurator.getGoodsList();
-            for (String goodName : goodsList) {
-                GoodsStorage storage = storages.get(goodName);
-                long goodsNumberToLoad = Long.parseLong(train.getTrainProperties().getProperty(goodName + "s" + "Capacity"));
-                for (int i = 0; i < goodsNumberToLoad; i++) {
-                    train.loadGood(storage.unloadGood());
-                }
-                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                        "Train " + train.getTrainProperties().getProperty("name") + " loaded all fitable " + goodName);
+        LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+                "Train " + train.getTrainProperties().getProperty("name") + " is ready to load with goods...");
+
+        ArrayList<String> goodsList = GoodsConfigurator.getGoodsList();
+        for (String goodName : goodsList) {
+            GoodsStorage storage = storages.get(goodName);
+            long goodsNumberToLoad = Long.parseLong(train.getTrainProperties().getProperty(goodName + "s" + "Capacity"));
+            for (int i = 0; i < goodsNumberToLoad; i++) {
+                Good goodForLoading = storage.unloadGood();
+                train.loadGood(goodForLoading);
             }
+
             LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
-                    "Train " + train.getTrainProperties().getProperty("name") + " was fully loaded");
-            storages.notifyAll();
+                    "Train " + train.getTrainProperties().getProperty("name") + " loaded all fitable " + goodName);
         }
+
+        LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
+                "Train " + train.getTrainProperties().getProperty("name") + " was fully loaded");
     }
 }
