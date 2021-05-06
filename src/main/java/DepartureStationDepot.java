@@ -2,11 +2,8 @@ import utilities.LoggerPrintAssistant;
 import utilities.TimeUtilities;
 import utilities.TrainsConfigurator;
 
-import java.util.ArrayList;
-import java.util.Properties;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.*;
+import java.util.concurrent.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,7 +13,7 @@ public class DepartureStationDepot {
     private final TrainsConfigurator trainsConfigurator;
     private TrainInformationManifest informationManifest;
 
-    private final ArrayList<Train> depotTrains = new ArrayList<>();
+    private final ConcurrentMap<String, Train> depotTrains = new ConcurrentHashMap<>();
     private final ExecutorService threadPool;
 
     public DepartureStationDepot(ConfiguratorManager configuratorManager) {
@@ -41,12 +38,14 @@ public class DepartureStationDepot {
                         "Start to produce new train...");
                 Thread.sleep(TimeUtilities.convertSecsToMillis(Long.parseLong(trainProperties.getProperty("createTime"))));
 
+                String trainNewId = UUID.randomUUID().toString();
                 Train train = Train.builder()
                         .trainProperties(trainProperties)
                         .informationManifest(informationManifest)
                         .totalTimeInTrips(0)
+                        .trainId(trainNewId)
                         .build();
-                depotTrains.add(train);
+                depotTrains.putIfAbsent(trainNewId, train);
 
                 LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                         "Train " + trainProperties.getProperty("name") + " was created. Send it on its way...");
@@ -59,25 +58,26 @@ public class DepartureStationDepot {
     }
 
     public synchronized void replaceOldTrainToNewOne(Train oldTrain) {
-        removeTrainFromUse(oldTrain);
+        removeTrainFromUse(oldTrain.getTrainId(), oldTrain);
 
         LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                 "Send request for production of new train to replace the old one");
         launchNewTrain(oldTrain.getTrainProperties());
     }
 
-    public synchronized void removeTrainFromUse(Train train) {
+    private synchronized void removeTrainFromUse(String trainId, Train train) {
         train.interrupt();
+        depotTrains.remove(trainId);
         LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.INFO,
                 "Train " + train.getTrainProperties().getProperty("name") + " was successfully disposed of");
     }
 
-    public void stopDepotOperations() {
+    public synchronized void stopDepotOperations() {
         try {
             threadPool.shutdown();
             threadPool.awaitTermination(1, TimeUnit.SECONDS);
-            for (Train train : depotTrains) {
-                removeTrainFromUse(train);
+            for (Map.Entry<String, Train> train : depotTrains.entrySet()) {
+                removeTrainFromUse(train.getKey(), train.getValue());
             }
         } catch (InterruptedException exception) {
             LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,

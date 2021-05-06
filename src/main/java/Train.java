@@ -18,12 +18,19 @@ public class Train extends Thread {
 
     private int totalTimeInTrips;
 
+    private final String trainId;
+
     private final ArrayList<Good> transportedGoods = new ArrayList<>();
 
     @Override
     public void run() {
         int amortizationTime = Integer.parseInt(trainProperties.getProperty("amortizationTime"));
         while (totalTimeInTrips < amortizationTime) {
+            if (isInterrupted()) {
+                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
+                        "Use of train was stopped by interrupt");
+                return;
+            }
             RailwayTrack departureFreeRailwayTrackForSending;
             try {
                 departureFreeRailwayTrackForSending = informationManifest.getDepartureStation().getFreeStationRailwayTrack();
@@ -41,6 +48,11 @@ public class Train extends Thread {
                 return;
             }
 
+            if (isInterrupted()) {
+                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
+                        "Use of train was stopped by interrupt");
+                return;
+            }
             RailwayTrack forwardRailwayTrack;
             try {
                 forwardRailwayTrack = informationManifest.getRailwayTracksManager().getFreeForwardRailwayTrack();
@@ -64,6 +76,11 @@ public class Train extends Thread {
                 return;
             }
 
+            if (isInterrupted()) {
+                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
+                        "Use of train was stopped by interrupt");
+                return;
+            }
             RailwayTrack arrivalFreeRailwayTrackForGetting;
             try {
                 arrivalFreeRailwayTrackForGetting = informationManifest.getArrivalStation().getFreeStationRailwayTrack();
@@ -90,7 +107,12 @@ public class Train extends Thread {
                         "Use of train was stopped while busy-waiting in arrival station", exception);
                 return;
             }
-            
+
+            if (isInterrupted()) {
+                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
+                        "Use of train was stopped by interrupt");
+                return;
+            }
             RailwayTrack arrivalFreeRailwayTrackForSending;
             try {
                 arrivalFreeRailwayTrackForSending = informationManifest.getArrivalStation().getFreeStationRailwayTrack();
@@ -111,6 +133,11 @@ public class Train extends Thread {
                 return;
             }
 
+            if (isInterrupted()) {
+                LoggerPrintAssistant.printMessageWithSpecifiedThreadName(logger, Level.WARNING,
+                        "Use of train was stopped by interrupt");
+                return;
+            }
             try {
                 informationManifest.getRailwayTracksManager().startTrainRunningOnTrack(this, backRailwayTrack);
             } catch (InterruptedException exception) {
@@ -153,5 +180,9 @@ public class Train extends Thread {
 
     public boolean areThereAnyUnloadedGoodsLeft() {
         return transportedGoods.size() > 0;
+    }
+
+    public String getTrainId() {
+        return trainId;
     }
 }
